@@ -10,10 +10,6 @@
 
 <body>
     <header>
-
-        <h1>
-            <a href="index.html">(some sort of image)</a>
-        </h1>
             <!-- navigation -->
         <nav>
             <ul>
@@ -21,42 +17,80 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#my-projects">Projects</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-
         </nav>
     </header>
     
     <section class="hero">
-        <h2>Greg Lanctot</h2>
-            <h3>Font-end Web Developer</h3>
-
-
+        <div class="hero-text">
+            <h2>Greg Lanctot</h2>
+                <h3>Font-end Web Developer</h3>
+        </div>
     </section>
 
     <!-- about me -->
-    <section id="about" class="#">
+    <section id="about" class="about-me">
         <h2>About Me</h2>
             <p>Hello, my name is Greg!  I'm a web developer from Minneapolis, MN.  I love to use my creativity to produce amazing websites.
             With my free time I like to spend time with my family and play golf.</p>
     </section>
 
     <!-- projects -->
-    <section id="projects" class="#">
-        <h2>My Recent Work</h2>
+    <section id="my-projects" class="my-projects">
+        <h2>My Projects</h2>
+            <div class="projects">
 
+                <article class="project larger">
+                    <a href="https://glanctot.github.io/run-buddy/" target="_blank">
+                        <img src="./assets/images/run-buddy.JPG" alt="picture of run buddy website">
+                            <div class="description">
+                                <h3>Run Buddy</h3>
+                                <p>Built with HTML and CSS</p>
+                            </div>
+                    </a>        
+                </article>
 
+                <article class="project">
+                    <a href="#" target="_blank">
+                        <img src="./assets/images/Be Right Back Screen.jpg">
+                            <div class="description">
+                                <h3>Upcoming Projects</h3>
+                                <p>Check back soon!</p>
+                            </div>
+                    </a>
+                </article>
+
+                <article class="project">
+                    <a href="#" target="_blank">
+                        <img src="./assets/images/Be Right Back Screen.jpg">
+                            <div class="description">
+                                <h3>Upcoming Projects</h3>
+                                <p>Check back soon!</p>
+                            </div>
+                    </a>        
+                </article>
+
+            </div>
     </section>
 
     <!-- contact -->
     <section id="contact" class="#">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="contact-name">Your Name</label>
+            <input type="text" for="contact-name" placeholder="Your Name">
 
+            <label for="contact-message">Message Me</label>
+            <textarea id="contact-message" placeholder="message"></textarea>
 
-        
+            <button type="submit">Submit</button>
+        </form>
+
     </section>
 </body>
 </html>
