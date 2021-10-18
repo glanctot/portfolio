@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     
 }
@@ -77,39 +77,97 @@ header nav ul li a:hover::after {
 .hero-text {
     padding: 100px;
     position: absolute;
-    top: 7%;
+    bottom: 7%;
 }
 
+.hero-text p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero-text h2 {
+    font-size: 200px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: -10px;
+}
+
+.hero-text h3 {
+    font-size: 50px;
+    font-weight: 500;
+}
 /* about me */
 
 .about-me {
-    background-color: violet;
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent), url("../images/background.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 25px;
+}
+
+.about-me h2 {
+    font-size: 1.55vw;
 }
 
 /* my project styles */
 
 .my-projects {
-    background-color: violet;
-}
-
-.projects {
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent), url("../images/background.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.my-projects h2 {
+    font-size: 1.55vw;
+}
+.project {
+    padding-left: 100px;
+    position: relative;
+
 }
 
 .project img {
-    border-radius: 10px;
-    width: 250px;
-    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
-.larger img {
-    width: 400px;
-    height: 200px;
+
+.description {
+    position: absolute;
+    bottom: 0;
+    bottom: 2px;
+    font-size: 20px;
 }
-.project a {
+.larger {
+    width: 600px;
+    height: 300px;
+}
+
+.smaller {
+    width: 500px;
+    height: 250px;
+}
+
+/* contact section */
+
+.contact {
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent), url("../images/background.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1.1vw;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    padding: 5px 15px;
+}
+
+button {
     color: black;
-    text-decoration: none;
 }
-
