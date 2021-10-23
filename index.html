@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Greg Lanctot Portfolio</title>
 </head>
 
@@ -28,23 +28,27 @@
     
     <!-- hero -->
     <section class="hero">
-        <div class="hero-text">
-            <p>I'm</p>
+        <div class="container">
+            <p>I'M</p>
                 <h2>Greg</h2>
                 <h3>Front-end Developer</h3>
-        </div>
+        </div>  
     </section>
 
     <!-- about me -->
     <section id="about" class="about-me">
-        <h2>About Me</h2>
-            <p>Hello, my name is Greg!  I'm a web developer from Minneapolis, MN.  I love to use my creativity to produce amazing websites.
-            With my free time I like to spend time with my family, play golf and travel.</p>
+        <div class="container">
+            <h2 class="primary-border">About Me</h2>
+                <p>Hello, my name is Greg!  I'm a web developer from Minneapolis, MN.  I love to use my creativity to produce amazing websites.
+                With my free time I like to spend time with my family, play golf and travel.</p>
+        </div>
     </section>
 
     <!-- projects -->
     <section id="my-projects" class="my-projects">
-        <h2>My Projects</h2>
+        
+        <div class="container">
+            <h2 class="secondary-border">My Projects</h2>
 
                 <article class="project">
                     <a href="https://glanctot.github.io/run-buddy/" target="_blank">
@@ -75,21 +79,23 @@
                             </div>
                     </a>        
                 </article>
-
+        </div>
     </section>
 
     <!-- contact -->
         <section id="contact-me" class="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-form">
+                <h2>Contact Me</h2>
                 <form>
                     <label for="contact-name">Your Name</label>
                     <input type="text" for="contact-name" placeholder="Your Name">
 
-                    <label for="contact-message">Message Me</label>
-                    <textarea id="contact-message" placeholder="message"></textarea>
+                    <label for="email">Your E-mail</label>
+                    <input type="email" for="email" placeholder="Your E-mail">
 
-                    <button type="submit">Submit</button>
+                    <label for="contact-message">Message Me</label>
+                    <textarea id="contact-message" placeholder="Your Message"></textarea>
+
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </section>
