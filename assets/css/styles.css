@@ -8,16 +8,13 @@
 :root {
     --primary-color: #1824c7;
     --seconday-color: #f49f1c;
-    --tertiary-color: #fff;
+    --tertiary-color: rgba(226, 226, 226, 0.76);
 }
 
 /* header styles */
 header {
     background: var(--primary-color);
     padding: 1.5em 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 header a {
@@ -28,7 +25,7 @@ header a {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
@@ -63,10 +60,14 @@ header nav ul li a:hover::after {
     height: 100vh;
     color: var(--tertiary-color);
     font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
 }
 
-.hero-text h3 {
-    font-size: 3.5rem;
+.social {
+    display: flex;
+    flex-direction: column;
 }
 /* end of hero */
 
@@ -74,10 +75,6 @@ section {
     padding: 2rem 0;
 }
 
-.container {
-    margin: 0 auto;
-    width: min(90%, 70rem);
-}
 body {
     font-size: 1.3rem;
     line-height: 1.2;
@@ -87,6 +84,10 @@ body {
 }
 /* start of about me */
 .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -96,15 +97,20 @@ body {
     padding-bottom: 1em;
     margin: 0 auto 0 auto;
 }
-
+.about-me img {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
 /* end of about me */
 
 /* start of projects */
 
 .my-projects {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: var(--primary-color);
     background: linear-gradient(#f49f1c,#1824c7);
@@ -114,8 +120,8 @@ body {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
+
 .project {
-    padding-left: 100px;
     position: relative;
 }
 
@@ -131,21 +137,39 @@ body {
     bottom: 0;
     bottom: 2px;
     font-size: 1.125rem;
-    color: var(--tertiary-color);
+    color: white;
 }
-
 
 .contact {
     background: var(--primary-color);
+    color: var(--tertiary-color);
+    text-align: center;
 }
 
-input, textarea {
-    display: block;
-}
 @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
       justify-content: center;
       position: relative;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex: 0 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    header nav ul {
+        display: block;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
     }
 }
